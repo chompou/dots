@@ -83,12 +83,12 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 // startup apps
 spawn-at-startup "xwayland-satellite"
-spawn-at-startup "vesktop"
-spawn-at-startup "spotify-launcher"
 spawn-at-startup "swayidle"
 spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
 spawn-at-startup "mako"
 spawn-at-startup "swaybg"
+spawn-at-startup "vesktop"
+spawn-at-startup "spotify-launcher"
 
 
 environment {
@@ -115,6 +115,7 @@ binds {
     Mod+D { spawn "fuzzel"; }
     Super+Alt+L { spawn "swaylock"; }
     Mod+G { spawn "vivaldi"; }
+
     XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
     XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
