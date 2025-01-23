@@ -21,6 +21,7 @@ require("lazy").setup({
 
     -- rust lsp
     { import = "lazyvim.plugins.extras.lang.rust" },
+
     -- import/override with your plugins
     { import = "plugins" },
   },

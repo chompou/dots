@@ -65,7 +65,7 @@ layout {
         width 2 
         // active-color "#7fc8ff"
         // inactive-color "#505050"
-        active-gradient from="#80c8ff" to="FF00FF" angle=45
+        active-gradient from="#83C092" to="7FBBB3" angle=45
     }
 
     border {
