@@ -4,7 +4,7 @@ My personal dotfiles. This is a work in progress, and probably will be forever.
 
 ## Screenshots
 
-![App Screenshot](https://drive.google.com/file/d/1-iojvdUDBWDru__Z3aHgM1rXAvWvCU9m/view?usp=sharing)
+![App Screenshot]([https://drive.google.com/file/d/1-iojvdUDBWDru__Z3aHgM1rXAvWvCU9m/view?usp=sharing](https://drive.google.com/file/d/1-iojvdUDBWDru__Z3aHgM1rXAvWvCU9m/view))
 
 ![App Screenshot](https://drive.google.com/file/d/1fT_2OB2ROk_JhPA4ob4bt0usq3Q6fpCt/view?usp=sharing)
 ## Installation
