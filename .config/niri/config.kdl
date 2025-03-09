@@ -23,8 +23,8 @@ input {
     trackpoint {
       off
     }
-
-    focus-follows-mouse max-scroll-amount="0%"
+    focus-follows-mouse
+    warp-mouse-to-focus
 }
 
 debug {
@@ -49,7 +49,7 @@ output "DP-1" {
 }
 
 layout {
-    gaps 8
+    gaps 7
 
     center-focused-column "never"
 
@@ -77,22 +77,26 @@ layout {
     struts {
 
     }
+
+    shadow {
+        on
+  }
 }
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 // startup apps
+spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "swayidle"
-spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
 spawn-at-startup "mako"
 spawn-at-startup "swaybg"
-spawn-at-startup "vesktop"
+spawn-at-startup "discord"
 spawn-at-startup "spotify-launcher"
 
 
 environment {
-    DISPLAY ":0"
+    DISPLAY ":1"
 }
 
 window-rule {
@@ -109,6 +113,7 @@ window-rule {
 }
 
 binds {
+    MouseForward { spawn; }
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+T { spawn "kitty"; }
